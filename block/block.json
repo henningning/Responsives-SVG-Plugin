@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hr/responsive-svg",
+  "version": "1.0.0",
+  "title": "Responsives SVG",
+  "category": "media",
+  "icon": "format-image",
+  "description": "SVG aus der Mediathek einfügen und automatisch an die verfügbare Breite anpassen.",
+  "keywords": ["svg", "logo", "responsiv", "responsive"],
+  "textdomain": "responsives-svg",
+  "attributes": {
+    "mediaId": {"type": "number", "default": 0},
+    "mediaUrl": {"type": "string", "default": ""},
+    "alt": {"type": "string", "default": ""},
+    "align": {"type": "string", "default": "wide"}
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false,
+    "className": true,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

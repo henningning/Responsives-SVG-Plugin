@@ -1,0 +1,17 @@
+/* Der Block kann auch in einer Flex-Gruppe schrumpfen. */
+.wp-block-hr-responsive-svg {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin-block: 0;
+}
+
+/* Anders als ein eingebettetes SVG mit festen Attributen skaliert das Bild fluid. */
+.wp-block-hr-responsive-svg > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
